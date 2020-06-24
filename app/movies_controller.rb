@@ -61,7 +61,7 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"
-  multi = Movie.where("title = 'Title' AND release_date = 2000 AND director = 'Me'")
+  multi = Movie.find_by(title: "Title", release_date: 2000, director: "Me")
   #binding.pry
   multi
 end
